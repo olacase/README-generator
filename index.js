@@ -39,15 +39,15 @@ function promptUser(){
 ])};
 
 
-function writeToFile(fileName, data) {
-    fs.appendFile(`${fileName}.md`, data, 
+function generateFile(fileName, data) {
+    fs.writeFile(`${fileName}.md`, data, 
     (err) => err ? console.error(err) : console.log(`${fileName}.md has been generated.`))
 }
 
 
-async function init() {
+async function run() {
     let answers = await promptUser();
-    writeToFile((answers.fileName),(generateMockup(answers)));
+    generateFile((answers.fileName),(generateMockup(answers)));
 }
 
-init();
+run();
