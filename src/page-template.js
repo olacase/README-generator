@@ -8,6 +8,7 @@ function generateMockup(templateData) {
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
+  * [Tools](#tools)
   * [How to Contribute](#how-to-contribute)
   * [Tests](#tests)
   * [Questions?](#questions)
@@ -23,12 +24,15 @@ function generateMockup(templateData) {
   ## Usage
   ${templateData.usage}
 
+  ## Tools
+  ${templateData.tools}
+
   ## How to Contribute
-  [Contributor Covenant](https://www.contributor-covenant.org/)  
-  ${templateData.contributing}
+  
+  ${templateData.contribute}
 
   ## Tests
-  ${templateData.testing}
+  ${templateData.tests}
 
   ## Questions?
   ### Reach me here: 
